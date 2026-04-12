@@ -1,6 +1,6 @@
 ---
 title: "日报 - 2026-04-08"
-date: 2026-04-08
+date: 2026-04-08 12:00:00
 tags:
   - daily-report
   - ai-agent
