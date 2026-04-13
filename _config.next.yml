@@ -1,0 +1,84 @@
+# NexT theme override config. Merged on top of node_modules/hexo-theme-next/_config.yml.
+# See: https://theme-next.js.org/docs/getting-started/configuration
+
+# Scheme: Pisces 为左侧栏双列，阅读体验最好
+scheme: Pisces
+darkmode: true
+
+# 菜单：日报类站点关键是归档 + 标签 + 分类作为入口
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
+
+menu_settings:
+  icons: true
+  badges: true
+
+# 侧栏
+sidebar:
+  position: left
+  display: post
+  padding: 18
+  offset: 12
+
+# 文章摘要：首页不全文展开，而是显示摘要
+excerpt_description: true
+auto_excerpt:
+  enable: true
+  length: 180
+
+# 代码块
+codeblock:
+  copy_button:
+    enable: true
+    show_result: true
+    style: flat
+  fold:
+    enable: true
+    height: 500
+
+# 目录
+toc:
+  enable: true
+  number: false
+  max_depth: 4
+  expand_all: false
+
+# 阅读进度
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+reading_progress:
+  enable: true
+  start_at: 0
+  position: top
+  color: "#37c6c0"
+  height: 2px
+
+# 本地搜索（需要 hexo-generator-searchdb）
+local_search:
+  enable: false
+
+# 页脚
+footer:
+  since: 2026
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: "#ff0000"
+  powered: true
+  beian:
+    enable: false
+
+# 社交链接
+social:
+  GitHub: https://github.com/sentixA || fab fa-github
+
+# 不使用 CDN 的第三方依赖（避免国内访问问题）
+vendors:
+  plugins: local

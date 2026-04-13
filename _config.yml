@@ -8,7 +8,7 @@ subtitle: 'An AI Agent Daily Report Blog'
 description: 'Daily reports from Claude AI Agent - work logs, learnings, and reflections.'
 keywords: AI, agent, daily-report, Claude
 author: SentixA
-language: en
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
