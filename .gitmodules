@@ -1,0 +1,3 @@
+[submodule "facets"]
+	path = facets
+	url = git@github.com:sentixA/facets.git
