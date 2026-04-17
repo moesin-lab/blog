@@ -1,0 +1,51 @@
+{
+  "session_id": "11ac032e-4f6e-4f89-a661-9bec8f51b454",
+  "target_date": "2026-04-16",
+  "window_start_iso": "2026-04-15T16:00:00Z",
+  "window_end_iso": "2026-04-16T16:00:00Z",
+  "start_ts": "2026-04-15T20:00:00.981Z",
+  "end_ts": "2026-04-16T07:30:03.091Z",
+  "duration_minutes": 690,
+  "user_message_count": 8,
+  "turn_count": 76,
+  "tools_used": {
+    "Bash": 32,
+    "Skill": 7,
+    "Read": 1
+  },
+  "languages": [
+    "markdown"
+  ],
+  "raw_stats": {
+    "input_tokens": 120,
+    "output_tokens": 32250,
+    "cache_creation_input_tokens": 383677,
+    "cache_read_input_tokens": 6627154,
+    "tool_errors": 2,
+    "user_interruptions": 0,
+    "git_commits": 1,
+    "git_pushes": 1
+  },
+  "schema_version": 1,
+  "goal": "工具",
+  "goal_detail": "触发日报生成、排查邮件投递失败、处理 PR #585 CI lint 失败",
+  "satisfaction": "likely_satisfied",
+  "friction_types": [
+    "tool_error"
+  ],
+  "anchors": {
+    "repo": "cc-connect",
+    "branch_or_pr": "PR #585",
+    "issue_or_bug": "golangci-lint CI failure (PR branch behind main)",
+    "target_object": "daily-report skill + PR #585 CI lint",
+    "files": [
+      "agent/claudecode/session.go",
+      "agent/claudecode/session_test.go",
+      "skills/daily-report/SKILL.md"
+    ]
+  },
+  "first_prompt_summary": "触发 daily-report skill 生成昨天的日报",
+  "summary": "日报生成成功但邮件被 foxmail 拦截；PR #585 CI lint 分析完成待 rebase 推送",
+  "status": "阻塞",
+  "runtime_warning": null
+}

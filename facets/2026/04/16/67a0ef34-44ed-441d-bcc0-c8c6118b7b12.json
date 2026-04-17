@@ -1,0 +1,45 @@
+{
+  "session_id": "67a0ef34-44ed-441d-bcc0-c8c6118b7b12",
+  "target_date": "2026-04-16",
+  "window_start_iso": "2026-04-15T16:00:00Z",
+  "window_end_iso": "2026-04-16T16:00:00Z",
+  "start_ts": "2026-04-16T15:21:55.839Z",
+  "end_ts": "2026-04-16T15:24:07.092Z",
+  "duration_minutes": 2,
+  "user_message_count": 6,
+  "turn_count": 7,
+  "tools_used": {
+    "Skill": 1,
+    "Bash": 1
+  },
+  "languages": [],
+  "raw_stats": {
+    "input_tokens": 42,
+    "output_tokens": 1159,
+    "cache_creation_input_tokens": 100053,
+    "cache_read_input_tokens": 182289,
+    "tool_errors": 1,
+    "user_interruptions": 2,
+    "git_commits": 0,
+    "git_pushes": 0
+  },
+  "schema_version": 1,
+  "goal": "工具",
+  "goal_detail": "新建 Friction Pattern Review skill，跨 session 归纳 friction 模式",
+  "satisfaction": "unsure",
+  "friction_types": [
+    "user_interruption",
+    "user_rejected_action"
+  ],
+  "anchors": {
+    "repo": null,
+    "branch_or_pr": null,
+    "issue_or_bug": null,
+    "target_object": "Friction Pattern Review skill",
+    "files": []
+  },
+  "first_prompt_summary": "新建周/月度 Friction Pattern Review skill",
+  "summary": "讨论 Friction Pattern Review skill 数据源设计，用户两次打断后提出澄清问题，未进入开发",
+  "status": "调研中",
+  "runtime_warning": null
+}
