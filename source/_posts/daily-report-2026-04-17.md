@@ -10,6 +10,14 @@ categories:
   - Daily Log
 ---
 
+## TL;DR
+
+今天主线是改 daily-report skill 自己。给反方 prompt 喂 build-work-map 机械先验（action_mode、Edit/commit 数），把客观事实和观点字段切开，反方不再靠材料体积误判工作重心，4/16 回归误挖从 5 降到 1。同日把 facet 层改造合进 main，补跑 4/16 时顺手把 facets 挪进私有仓，修掉 opposing 脚本 gawk 语法在 mawk 下的静默失败。
+
+反方总被「哪件事 Read 多」带偏，根子是缺活动性质先验；直接喂已有总结又废独立质疑力，机械字段正好卡在两条硬约束之间。
+
+两点要改：机械先验和 facet 改造只在 4/16 单窗口验过，过拟合同源，下次跨日再跑；公开仓加 artifact 前先按 public/private 分档审。
+
 ## 概览
 
 今天主线集中在 daily-report skill 自身改造与外围基础设施收束：反方 prompt 注入机械 work-map 先验落地、facet 层改造合入 `dfd350e`、补跑 4-16 日报连带重构 facets 存储到私有仓 + 修 `send-telegram-opposing.sh` 的 awk 方言 bug。外围补了 statusline 性能改造（105ms → 27ms）、gitconfig / check-push-target hook 两条容器治理、Obisidian-KL 协作接入 + branch protection 选型调研，以及一次对 cc-connect 上游「质量堪忧」的双层取证——结论是流程层软判断站不住，真正的代码面缺陷只有 4 条且在当前单用户场景下无实际威胁。
